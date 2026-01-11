@@ -50,7 +50,7 @@ html {
 }
 
 .silk-logo {
-    max-width: 110px; /* Increased for PureSkin logo */
+    max-width: 110px;
 }
 
 .footer-logos {
@@ -184,8 +184,30 @@ h2 {
 .step-content strong {
     display: block;
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1.35em; /* Slightly reduced for better balance under main point */
     font-weight: 800;
+}
+
+.app-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.app-benefits li {
+    margin-bottom: 12px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.app-benefits li::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #ffeb3b;
+    font-size: 1.4em;
 }
 
 /* WhatsApp Button */
@@ -250,6 +272,16 @@ h2 {
     color: #d0d0d0;
     margin-top: 8px;
     opacity: 0.9;
+}
+
+/* CTA Note */
+.cta-note {
+    font-size: 0.9em;
+    color: #d0d0d0;
+    margin-top: 8px;
+    opacity: 0.9;
+    max-width: 250px;
+    text-align: center;
 }
 
 /* Final CTA */
@@ -346,7 +378,7 @@ h2 {
     }
 
     .silk-logo {
-        max-width: 85px; /* Proportional increase on mobile */
+        max-width: 85px;
     }
 
     h1 {
@@ -394,6 +426,10 @@ h2 {
         max-width: 100%;
     }
 
+    .app-benefits li {
+        font-size: 1em;
+    }
+
     .video-embed-container {
         max-width: 90%;
         margin: 30px auto;
@@ -412,6 +448,11 @@ h2 {
     .phone-number {
         font-size: 0.95em;
     }
+
+    .cta-note {
+        font-size: 0.85em;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -422,35 +463,4 @@ h2 {
     .header {
         padding-top: 90px;
     }
-}
-
-.app-benefits {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-    text-align: right;
-    font-size: 1.1em;
-}
-
-.app-benefits li {
-    margin-bottom: 12px;
-    padding-right: 20px;
-    position: relative;
-}
-
-.app-benefits li::before {
-    content: "•";
-    position: absolute;
-    right: 0;
-    color: #ffeb3b;
-    font-size: 1.4em;
-}
-
-.cta-note {
-    font-size: 0.9em;
-    color: #d0d0d0;
-    margin-top: 8px;
-    opacity: 0.9;
-    max-width: 250px;
-    text-align: center;
 }

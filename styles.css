@@ -191,9 +191,9 @@ h2 {
 .app-benefits {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 15px 0 0;
     text-align: right;
-    font-size: 1.1em;
+    font-size: 1.05em; /* Slightly smaller base size for the whole block */
 }
 
 .app-benefits li {
@@ -207,12 +207,14 @@ h2 {
     position: absolute;
     right: 0;
     color: #ffeb3b;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .app-benefits li strong {
-    font-size: 1.25em; /* ~10% smaller than main point */
-    font-weight: 700; /* Slightly less bold */
+    font-size: 1.15em; /* Titles ~10-15% smaller than main point */
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
 }
 
 /* WhatsApp Button */

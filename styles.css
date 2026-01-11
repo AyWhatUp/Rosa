@@ -184,7 +184,7 @@ h2 {
 .step-content strong {
     display: block;
     margin-bottom: 15px;
-    font-size: 1.35em; /* Slightly reduced for better balance under main point */
+    font-size: 1.35em; /* Main point size */
     font-weight: 800;
 }
 
@@ -208,6 +208,11 @@ h2 {
     right: 0;
     color: #ffeb3b;
     font-size: 1.4em;
+}
+
+.app-benefits li strong {
+    font-size: 1.25em; /* ~10% smaller than main point */
+    font-weight: 700; /* Slightly less bold */
 }
 
 /* WhatsApp Button */
@@ -428,6 +433,10 @@ h2 {
 
     .app-benefits li {
         font-size: 1em;
+    }
+
+    .app-benefits li strong {
+        font-size: 1.15em; /* Even smaller on mobile for balance */
     }
 
     .video-embed-container {
